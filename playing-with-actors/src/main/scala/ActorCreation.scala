@@ -39,15 +39,15 @@ class MusicPlayer extends Actor{
   }
 }
 
-//object Creation extends App {
-//
-//  // Create the 'creation' actor system
-//  val system = ActorSystem("creation")
-//
-//  // Create the 'Music Player' actor
-//  val player = system.actorOf(Props[MusicPlayer], "player")
-//  //send StartMusic Message to actor
-//
-//  player ! StartMusic
-//  //send StopMusic Message to actor
-//}
+object Creation extends App {
+
+  // Create the 'creation' actor system
+  val system = ActorSystem("creation")
+
+  // Create the 'Music Player' actor
+  val player = system.actorOf(Props[MusicPlayer], "player")
+  //send StartMusic Message to actor
+
+  player ! StartMusic
+  //send StopMusic Message to actor
+}

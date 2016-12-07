@@ -1,7 +1,6 @@
 package com.packt.akka
 
 import akka.actor.{Actor, ActorSystem, Props, Stash}
-import akka.actor.Actor.Receive
 import com.packt.akka.UserStorage.{Connect, DisConnect, Operation}
 
 case class User(username: String, email: String)
